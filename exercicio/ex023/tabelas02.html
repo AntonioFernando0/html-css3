@@ -7,16 +7,23 @@
     <title>Tabelas Grandes</title>
     <style>
         body{
+             width: 40% ;margin: auto;
             font-family: Arial, Helvetica, sans-serif;
+            
+          
         }
         table{
             border-collapse: collapse;
             width: 500px;
+            
         }
         caption{
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(odd){
             background-color: lightgray;
         }
         th, td {
@@ -49,7 +56,7 @@
             <tbody>
                 <tr>
                     <td>São Paulo</td>
-                    <td class="num" style="width: 50px;"> 45 919 049</td>
+                    <td class="num" style="width: 100px;"> 45 919 049</td>
                 </tr>
                 <tr>
                     <td>Minas Gerais</td>
@@ -160,7 +167,7 @@
             <tfoot>
                 <tr>
                     <th scope="row">Total de Habitantes</th>
-                    <td class="num">
+                    <td class="num" style="width: 70px;">
                         <strong>207 880 699</strong>
                     </td>
                 </tr>
