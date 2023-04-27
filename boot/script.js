@@ -1,11 +1,23 @@
-const nav = document.querySelector(".elementos");
-const botao = document.querySelector(".linhas");
-const linhas = document.querySelectorAll(".span");
+class MobileNavbar
+ constructor(mobileMenu, navList, navLinks) {
+  this.mobileMenu = document.querySelector(mobileMenu);
+  this.navList = document.querySelector(navList);
+  this.navLinks = document.querySelectorAll(navLinks);
+  this.activeClass ="active";
+ }
 
-function alternar() {
-    nav.classList.toggle("barra-lateral");
-    linhas[0].classList.toggle("linha-0");
-    linhas[1].classList.toggle("linha-1");
-    linhas[2].classList.toggle("linha-2");
+ handleClick(){
+  this.navList.classList.toggle(this.activeClass)
+ }
+
+ addClickEvent(){
+  this.mobileMenu.addEventListerner("click", this.handleClick);
+ }
+
+ init() {
+  if (this.mobileMenu){
+    this.addClickEvent();
   }
-  botao.addEventListener("click", alternar);
+  return this;
+
+ }
