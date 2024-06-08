@@ -58,17 +58,39 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #333; /* Cor de fundo da barra */
+    background-color:  #EFEFEF; /* Cor de fundo da barra */
+    border-radius: 50px;
     padding: 10px 0;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.199);
 }
 
 .social-link {
     display: block;
     margin: 10px 0;
     text-decoration: none;
+    padding-right: 5px;
 }
 
 .social-icon {
     width: 40px; /* Ajuste o tamanho do ícone conforme necessário */
     height: 40px;
+}
+
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.titulo {
+    text-align: center;
+    max-width: 600px;
+}
+
+.titulo h1 {
+    font-size: 2em;
+    color: #333;
 }
