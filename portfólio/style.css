@@ -1,7 +1,10 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 * {
     margin: 0px;
     padding: 0px;
+    font-family: "Source Sans 3", sans-serif;
 }
 
 
@@ -43,6 +46,7 @@ li{
     text-decoration: none;
     text-align: center;
     padding-left: 15px;
+    
     }
 a:hover{
     background-color:  rgba(125, 129, 167, 0.618) ;
@@ -59,9 +63,10 @@ a:hover{
     flex-direction: column;
     align-items: center;
     background-color:  #EFEFEF; /* Cor de fundo da barra */
+   
     border-radius: 50px;
-    padding: 10px 0;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.199);
+    padding:  10px 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.096);
 }
 
 .social-link {
@@ -85,12 +90,33 @@ a:hover{
     position: relative;
 }
 
+
 .titulo {
     text-align: center;
     max-width: 600px;
+    background-color: #EFEFEF;
+    width: 800px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    
+
+
 }
 
 .titulo h1 {
     font-size: 2em;
     color: #333;
+}
+.tith1{
+    padding-top: 20px;
+    font-family: "Source Sans 3", sans-serif;
+    font-size:  ;
+}
+.p{
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
 }
