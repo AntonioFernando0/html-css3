@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 * {
     margin: 0px;
     padding: 0px;
     font-family: "Source Sans 3", sans-serif;
 }
+
+
 
 
 .header{
@@ -17,11 +20,11 @@
     align-items: center;
     height: 70px;
     text-align: justify;
-    
-  
+   
+ 
   }
  #logo{
-    
+   
     height: 100px;
 }
 body,ul,li, p {
@@ -33,11 +36,13 @@ body,ul,li, p {
     }
 section{
     background-color: #EFEFEF;
+    
   }
 li{
  display: inline;
  float: left;
 }
+
 
   a {
     display: block;
@@ -46,13 +51,14 @@ li{
     text-decoration: none;
     text-align: center;
     padding-left: 15px;
-    
+   
     }
 a:hover{
     background-color:  rgba(125, 129, 167, 0.618) ;
     color:;
     border-radius: 10px ;
   }
+
 
   .social-nav {
     position: fixed;
@@ -69,6 +75,7 @@ a:hover{
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.096);
 }
 
+
 .social-link {
     display: block;
     margin: 10px 0;
@@ -76,10 +83,12 @@ a:hover{
     padding-right: 5px;
 }
 
+
 .social-icon {
     width: 40px; /* Ajuste o tamanho do ícone conforme necessário */
     height: 40px;
 }
+
 
 .content-section {
     display: flex;
@@ -88,7 +97,11 @@ a:hover{
     height: 100%;
     width: 100%;
     position: relative;
+
+
 }
+
+
 
 
 .titulo {
@@ -101,13 +114,17 @@ a:hover{
     align-items: center;
     flex-direction: column;
 
-    
+
+   
+
+
 
 
 }
 
+
 .titulo h1 {
-    font-size: 2em;
+    font-size: 3.8em;
     color: #333;
 }
 .tith1{
@@ -119,4 +136,33 @@ a:hover{
     padding: 10px;
     margin: 10px;
     text-align: justify;
+    font-family: "Source Sans 3", sans-serif;;
+    font-size: 1.2em;
+   
 }
+#espaço{
+    padding: ;
+}
+/* Estilização da pagina 2*/
+
+.new-section .titulo {
+    margin-bottom: 20px;
+}
+
+.tith2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.projects-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects-list li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+
