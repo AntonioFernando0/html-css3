@@ -38,56 +38,94 @@ section{
     background-color: #EFEFEF;
     
   }
+
 li{
  display: inline;
  float: left;
 }
 
-
-  a {
+a {
     display: block;
     padding: 8px;
     list-style: none;
     text-decoration: none;
     text-align: center;
     padding-left: 15px;
-   
-    }
-a:hover{
-    background-color:  rgba(125, 129, 167, 0.618) ;
-    color:;
-    border-radius: 10px ;
-  }
+    position: relative; /* Necessário para o pseudo-elemento */
+}
+
+a::after {
+    content: ''; /* Conteúdo vazio para o pseudo-elemento */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px; /* Espessura da linha */
+    background-color: rgba(125, 129, 167, 0.618); /* Cor da linha */
+    transition: width 0.3s ease; /* Transição suave para a largura */
+}
+
+
+
+a:hover::after {
+    width: 100%; /* Expande a linha até a largura total do link */
+}
+
+ 
+
+
+
+
+
+
+
+
 
 
   .social-nav {
-    position: fixed;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+    position: absolute; /* Muda de fixed para absolute */
+    top: 50%; /* Posiciona no meio verticalmente */
+    right: 0; /* Alinha à direita */
+    transform: translateY(-50%); /* Centraliza verticalmente */
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:  #EFEFEF; /* Cor de fundo da barra */
-   
-    border-radius: 50px;
-    padding:  10px 10px;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.096);
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+.social-link img {
+    width: 40px;
+    margin: 5px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.234);
+    box-sizing: border-box;
+    display: flex;
+    
+    
 }
 
 
-.social-link {
-    display: block;
-    margin: 10px 0;
+.social-nav a {
     text-decoration: none;
-    padding-right: 5px;
+    color: inherit;
+    padding: 5px; /* Espacamento para o link */
+    transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease; /* Adiciona a transição */
 }
 
-
-.social-icon {
-    width: 40px; /* Ajuste o tamanho do ícone conforme necessário */
-    height: 40px;
+.social-nav a:hover {
+    color: #fff; /* Cor do texto quando hover */
+    background-color:  rgba(125, 129, 167, 0.618); /* Cor de fundo quando hover */
+    border-radius: 5px; /* Bordas arredondadas */
+    transform: translate(-3px, 3px);
+    transition: 0.5s;
 }
+
+ 
+
+
 
 
 .content-section {
