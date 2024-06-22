@@ -160,6 +160,12 @@ a:hover::after {
     font-family: "Oswald", sans-serif;
     font-size: 1.2em;
 }
+div > img{
+  width: 300px;
+  border-radius: 50%;
+  display: flex;
+  text-align: 
+}
 
 
 /* Estilização da pagina 2*/
