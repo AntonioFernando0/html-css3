@@ -9,7 +9,7 @@
     margin: 0px;
     padding: 0px;
     font-family: "Oswald", sans-serif;
-   
+    
     
 }
 
@@ -17,7 +17,7 @@
 
 
 .header{
-    background-color: #F2F2F2;
+    background-color: #1F2326;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between ;
@@ -25,12 +25,15 @@
     align-items: center;
     height: 70px;
     text-align: justify;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
    
  
   }
  #logo{
    
-    height: 100px;
+    height: 60px;
 }
 body,ul,li, p {
     margin: 0px;
@@ -58,6 +61,7 @@ a {
     text-align: center;
     padding-left: 15px;
     position: relative; /* Necessário para o pseudo-elemento */
+    color: #BFB7A8;
 }
 
 a::after {
@@ -191,8 +195,8 @@ div.img > img {
 
 
 .new-section {
-    width: 700px;
-    height: 500px;
+    width: 800px;
+    height: 800px;
     text-align: center;
     margin: auto; /* Para centralizar horizontalmente */
     border-radius: 30px;
