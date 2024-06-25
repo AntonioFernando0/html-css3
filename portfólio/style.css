@@ -213,3 +213,12 @@ mark {
     padding: 0.1em; /* Espaçamento interno */
 }
 
+div > img {
+
+    margin: auto;
+    padding: 10px;
+    width: 500px;
+
+    border-radius: 10px;
+}
+
