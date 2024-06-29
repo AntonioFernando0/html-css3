@@ -208,6 +208,7 @@ div.img > img {
 }
 .p {
     font-size:1.1em ;
+    text-align: justify;
 }
 mark {
     background-color: #BFB7A8; /* Cor de fundo */
@@ -226,19 +227,47 @@ div > img {
 
 /* Estilização da pagina 3*/
 
+
+
 section.especialidades {
     padding: 40px 4%;
     background-color: white;
 }
+
 h2 {
     font-size: 38px;
     text-align: center;
 }
-.especialidades .especialidade-box {
-    color: rgb(200, 29, 29);
-    padding: 40px;
+
+/* Definindo o contêiner flex */
+.especialidades .flex {
+    display: flex;
+    gap: 60px;
+    justify-content: center; /* Centraliza os conteúdos horizontalmente */
+    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
 }
-i {
+
+/* Estilizando cada caixa de especialidade */
+.especialidades .especialidade-box {
+    color: black;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 25px;
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis para um layout responsivo */
+    max-width: 300px; /* Limite máximo para a largura das caixas */
+    text-align: center; /* Centralizar o texto dentro das caixas */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Adicionando uma sombra leve */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves para o hover */
+}
+
+.especialidades .especialidade-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px black;
+}
+
+.especialidades .especialidade-box i {
     font-size: 70px;
-    color: #f31212;
+    color: #1F2326;
+    display: block;
+    margin-bottom: 15px; /* Espaço abaixo do ícone */
 }
